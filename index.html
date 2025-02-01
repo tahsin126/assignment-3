@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 3</title>
+    <link rel="stylesheet" href="styles/style.css">
     <!-- tailwind + daisyUI cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" />
@@ -99,12 +100,14 @@
                 <img src="./assets/cat-big.png" alt="Cat"
                     class="w-full max-h-screen object-contain">
             </div>
-    
+            <div class="ball">
+                
+            </div>
            
     
             <!-- Content -->
             <div class="absolute top-10 left-10  space-y-2 w-[50%]">
-                <h1 class="font-adlam-font text-3xl font-bold">Pamper Your Pet,<br> Because They Deserve<br> the Bes</h1>
+                <h1 class="font-adlam-font text-3xl font-bold">Pamper Your Pet,<br> Because They Deserve<br> the Best</h1>
                 <p>Discover a world of treats, toys, and essentials handpicked for<br> your furry friends. Shop now and make tails wag with joy!</p>
                 <button class="bg-color-primary px-2 rounded-md">Find a pet</button>
             </div>
@@ -116,7 +119,7 @@
      <!-- main section -->
       <main>
         <!-- card section -->
-        <section class="mx-auto px-6 mb-10">
+        <section class="mx-12 px-6 mb-10">
             
             <h1 class="text-3xl font-bold py-10 adlam-font">Browse By Categories</h1>
             <!-- card 1 -->
@@ -173,7 +176,7 @@
      </section>
      <!-- trending section -->
       <section class="bg-[rgb(255,249,244)] relative ">
-        <div class="ml-5 space-y-3">
+        <div class="mr-12 ml-6 space-y-3">
             <h1 class="text-3xl font-bold adlam-font p-2">Trending Pet Products</h1>
             <div class="grid grid-cols-1 md:grid-cols-3 space-y-3 space-x-1 w-full md:h-[400px] my-8">
                 <div class="bg-[rgb(249,223,138)]  rounded-lg  h-[400px] w-full mr-7">
@@ -282,9 +285,71 @@
             </div>
         </div>
       </section>
+      <!-- best saler products -->
+      <section class="mt-10 space-y-3 mx-12">
+        <h2 class="font-bold text-3xl font-adalam-font">Speacial Products</h2>
+        <div class="grid grid-cols-2 md:grid-cols-2 gap-4">
+            <div class="card bg-base-100  shadow-xl">
+                <figure>
+                  <img
+                    src="https://img.kwcdn.com/product/fancy/dc52b130-df04-473c-bba9-96e90bcbba50.jpg?imageView2/2/w/800/q/70/format/webp"
+                    alt="Shoes" class="rounded-lg" />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title">Cat Bed</h2>
+                  <p>Purrfect Beds for Happy Cats</p>
+                  <div class="card-actions justify-end">
+                    <button class="btn btn-primary bg-color-primary border-none text-black">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+            <div class="card bg-base-100  shadow-xl">
+                <figure>
+                  <img
+                    src="https://img.kwcdn.com/product/fancy/f3bff41b-e4f8-486b-b1c5-26971a859eaa.jpg?imageView2/2/w/800/q/70/format/webp"
+                    alt="Shoes" class="rounded-lg" />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title">Cat vest</h2>
+                  <p>Purrfect vest for Happy Cats</p>
+                  <div class="card-actions justify-end">
+                    <button class="btn btn-primary bg-color-primary border-none text-black">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+            <div class="card bg-base-100  shadow-xl">
+                <figure>
+                  <img
+                    src="https://www.baskuwait.com/content/images/00ae55f3-495a-476f-a464-5d839e3af339.jpg"
+                    alt="Shoes" class="rounded-lg" />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title">Dog Bed</h2>
+                  <p>Purrfect Beds for Happy Dos</p>
+                  <div class="card-actions justify-end">
+                    <button class="btn btn-primary bg-color-primary border-none text-black">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+            <div class="card bg-base-100  shadow-xl">
+                <figure>
+                  <img
+                    src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/4fa63984d1824949583505a4e225519f.jpg?imageView2/2/w/800/q/70/format/webp"
+                    alt="Shoes" class="rounded-lg" />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title">Dog Belt</h2>
+                  <p>Stylish and Secure Dog Walking Belts</p>
+                  <div class="card-actions justify-end">
+                    <button class="btn btn-primary bg-color-primary border-none text-black">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </section>
 
       <!-- low price section -->
-       <section class="my-14 mx-6 space-y-3 ">
+       <section class="mt-14 mb-72 mx-12 space-y-3 ">
         <h1 class=" font-bold text-2xl font-adlam-font">Everyday low Price</h1>
         <div class="grid gridc md:grid-cols-3 gap-8">
             <!-- card 1 -->
@@ -314,15 +379,58 @@
                 </div>
                 <div class="justify-end">
                     <img
-                      src="./assets/cute-dog-mid.png" />
+                      src="./assets/cute-pet-small.png" />
                 </div>
               </div>
         </div>
        </section>
       </main>
+       
+       
       <!-- footer section -->
-       <footer>
+       <footer class="relative">
+            <div class="mx-12 absolute bottom-60 left-auto right-auto md:left-36 w-9/12">
+                <!-- get pawsome news -->
+                 <div class="bg-bgcolor rounded-xl flex flex-col md:flex-row  items-center justify-around"> 
+                    <!-- image -->
+                     <div >
+                        <img src="./assets/cute-pet-small.png" alt="">
+                     </div>
+                     <!-- content -->
+                      <div class="space-y-3 mr-20">
+                        <h1 class="font-adalam-font text-3xl font-bold">Get Pawsome News!</h1>
+                        <p>Exclusive training tips, ticks, product deals and more.</p>
+                        <input type=" text" value="" placeholder="Enter Your Email" class="rounded-md bg-white p-4 w-72">
+                        <br>
+                        <button class="bg-color-primary px-2 py-1 text-xl rounded-md">Subscribe</button>
+                      </div>
+                 </div>
+                </div>
+            <div class="bg-[rgb(249,223,138)] flex items-end p-10 justify-between h-96">
+                <div class="space-y-2">
+                    <div class="flex items-center gap-2">
+                        <img src="./assets/logo-footer.png" alt="" class="h-6">
+                        <h1 class="tex-l font-bold ">Browse4Pets</h1>
+                    </div>
+                    <p class="text-sm">Discover a world of treats, toys, and<br> essentials handpicked for your furry<br> friends</p>
+                </div>
 
+                <div class="space-y-2">
+                    <p>Find a pet</p>
+                    <p>Breeds</p>
+                    <p>Contact us</p>
+                </div>
+
+                <div class="flex flex-col  space-y-2">
+                    <h1>Follow Us</h1>
+                    <div class="space-x-2">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
        </footer>
 </body>
 </html>

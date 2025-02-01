@@ -1,0 +1,18 @@
+
+@keyframes ping-pong {
+    from{
+        left: 0;
+    }
+    to{
+        left: 85%;
+    }
+}
+
+.ball{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgb(255,220,38);
+    animation: ping-pong 2s ease-in-out .1s infinite alternate ;
+}
